@@ -8,10 +8,18 @@ const CategoryButtons = () => {
     <View>
       <Text style={styles.headingText}>Categories</Text>
 
-      <ScrollView>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         {destinationCategories.map((item, index) => {
           return (
-            <View key={index}>
+            <View
+              key={index}
+              style={{
+                gap: 20,
+                backgroundColor: Colors.white,
+                padding: 12,
+                borderRadius: 10,
+              }}
+            >
               <Text>{item.title}</Text>
             </View>
           );
