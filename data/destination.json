@@ -34,9 +34,9 @@
     },
     {
         "id": "4",
-        "name": "Urban Explorer's Dream",
+        "name": "Enchanted Forest Retreat",
         "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
-        "description": "Immerse yourself in the vibrant energy of the city with",
+        "description": "Find serenity in the heart of nature with towering ",
         "rating": 4.6,
         "price": "180",
         "duration": "5",
@@ -47,12 +47,34 @@
         "id": "5",
         "name": "Tranquil Lakeside Maven",
         "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "description": "Relax and rejuvenate by the tranquil lakeside, surrounded",
+        "rating": 4.9,
+        "price": "120",
+        "duration": "3",
+        "location": "England",
+        "category": "Lakes"
+    },
+    {
+        "id": "6",
+        "name": "Sandy Shores Beach Resort",
+        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
         "description": "Relax and rejuvenate by the tranquil lakeside",
         "rating": 4.9,
         "price": "120",
         "duration": "3",
         "location": "England",
-        "category": "Forests"
+        "category": "Lakes"
+    },
+    {
+        "id": "7",
+        "name": "Mountains",
+        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "description": "Relax and rejuvenate by the tranquil lakeside",
+        "rating": 4.7,
+        "price": "100",
+        "duration": "7",
+        "location": "Canada",
+        "category": "Mountains"
     },
     {
         "id": "8",

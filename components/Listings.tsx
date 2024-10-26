@@ -1,10 +1,37 @@
-import { StyleSheet, Text, View } from "react-native";
+import {
+  FlatList,
+  Image,
+  ListRenderItem,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import React from "react";
 
-const Listings = () => {
+interface ListingDataType {
+  id: string;
+  name: string;
+  images: string;
+  description: string;
+  rating: number;
+  price: string;
+  duration: string;
+  location: string;
+  category: string;
+}
+
+const Listings = ({ listings }: { listings: ListingDataType[] }) => {
+  const renderItem: ListRenderItem<ListingDataType> = ({ item, index }) => {
+    return (
+      <View key={index}>
+        <Image source={{ uri: item.images }} />
+      </View>
+    );
+  };
+
   return (
     <View>
-      <Text>Listings</Text>
+      <FlatList data={listings} renderItem={renderItem} />
     </View>
   );
 };
