@@ -1,0 +1,79 @@
+[
+    {
+        "id": "1",
+        "name": "Tropical Paradise Resort",
+        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "description": "Escape to the ultimate tropical paradise retreat with",
+        "rating": 4.0,
+        "price": "150",
+        "duration": "3",
+        "location": "Pacific Ocean",
+        "category": "Beaches"
+    },
+    {
+        "id": "2",
+        "name": "Alpine Chalet Retreat",
+        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "description": "Experience the breathtaking beauty of the Alps from your",
+        "rating": 4.5,
+        "price": "120",
+        "duration": "4",
+        "location": "Switzerland",
+        "category": "Beaches"
+    },
+    {
+        "id": "3",
+        "name": "Urban Explorer's Dream",
+        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "description": "Immerse yourself in the vibrant energy of the city with",
+        "rating": 4.7,
+        "price": "140",
+        "duration": "2",
+        "location": "USA",
+        "category": "Cities"
+    },
+    {
+        "id": "4",
+        "name": "Urban Explorer's Dream",
+        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "description": "Immerse yourself in the vibrant energy of the city with",
+        "rating": 4.6,
+        "price": "180",
+        "duration": "5",
+        "location": "USA",
+        "category": "Forests"
+    },
+    {
+        "id": "5",
+        "name": "Tranquil Lakeside Maven",
+        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "description": "Relax and rejuvenate by the tranquil lakeside",
+        "rating": 4.9,
+        "price": "120",
+        "duration": "3",
+        "location": "England",
+        "category": "Forests"
+    },
+    {
+        "id": "8",
+        "name": "Metropolitan Marvels",
+        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "description": "Discover the cultural richness and architecture wonders",
+        "rating": 4.6,
+        "price": "170",
+        "duration": "3",
+        "location": "Japan",
+        "category": "Cities"
+    },
+    {
+        "id": "9",
+        "name": "Mystical Forest Sanctuary",
+        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "description": "Discover the cultural richness and architecture wonders",
+        "rating": 4.6,
+        "price": "170",
+        "duration": "3",
+        "location": "Japan",
+        "category": "Forests"
+    }
+]
