@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesome5, Ionicons } from "@expo/vector-icons";
 import Colors from "@/constants/Colors";
 import { Link } from "expo-router";
@@ -24,12 +24,26 @@ interface ListingDataType {
   category: string;
 }
 
-const Listings = ({ listings }: { listings: ListingDataType[] }) => {
+const Listings = ({
+  listings,
+  category,
+}: {
+  category: string;
+  listings: ListingDataType[];
+}) => {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    console.log("Updating the listing");
+
+    setTimeout(() => setLoading(false), 300);
+  }, [category]);
+
   const renderItem: ListRenderItem<ListingDataType> = ({ item, index }) => {
     return (
-      <Link href={`/listing/${item.id}` as any}>
+      <Link href={`/listing/${item.id}` as any} asChild>
         <TouchableOpacity
-          onPress={() => {}}
           key={index}
           style={{ gap: 20, backgroundColor: Colors.white, borderRadius: 10 }}
         >
@@ -114,7 +128,7 @@ const Listings = ({ listings }: { listings: ListingDataType[] }) => {
   return (
     <View>
       <FlatList
-        data={listings}
+        data={loading ? [] : listings}
         renderItem={renderItem}
         horizontal
         showsHorizontalScrollIndicator={false}

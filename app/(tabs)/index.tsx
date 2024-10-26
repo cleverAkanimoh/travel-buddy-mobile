@@ -16,10 +16,11 @@ import { useHeaderHeight } from "@react-navigation/elements";
 import CategoryButtons from "@/components/CategoryButtons";
 import Listings from "@/components/Listings";
 import listingData from "@/data/destination.json";
+import GroupListings from "@/components/GroupListings";
 
 const HomePage = () => {
   const headerHeight = useHeaderHeight();
-  const [_, setCategory] = useState("All");
+  const [category, setCategory] = useState("All");
   const [filteredListingData, setFilteredListingData] = useState(listingData);
 
   const onCategoryChanged = (category: string) => {
@@ -98,7 +99,9 @@ const HomePage = () => {
         </View>
         <CategoryButtons onCategoryChanged={onCategoryChanged} />
 
-        <Listings listings={filteredListingData} />
+        <Listings listings={filteredListingData} category={category} />
+
+        <GroupListings />
       </View>
     </>
   );
