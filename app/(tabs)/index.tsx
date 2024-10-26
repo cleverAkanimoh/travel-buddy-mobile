@@ -1,8 +1,10 @@
 import {
   Image,
+  NativeSyntheticEvent,
   StyleSheet,
   Text,
   TextInput,
+  TextInputChangeEventData,
   TouchableOpacity,
   View,
 } from "react-native";
@@ -17,10 +19,26 @@ import listingData from "@/data/destination.json";
 
 const HomePage = () => {
   const headerHeight = useHeaderHeight();
-  const [category, setCategory] = useState("All");
+  const [_, setCategory] = useState("All");
+  const [filteredListingData, setFilteredListingData] = useState(listingData);
 
   const onCategoryChanged = (category: string) => {
     setCategory(category);
+
+    if (category === "All") {
+      setFilteredListingData(listingData);
+      return;
+    }
+
+    setFilteredListingData(
+      listingData.filter((item) => item.category === category)
+    );
+  };
+
+  const onSearch = (e: NativeSyntheticEvent<TextInputChangeEventData>) => {
+    const value = e.currentTarget;
+
+    console.log(value);
   };
 
   return (
@@ -68,7 +86,11 @@ const HomePage = () => {
         <View style={styles.searchSectionWrapper}>
           <View style={styles.searchWrapper}>
             <Ionicons name="search" size={18} />
-            <TextInput placeholder="Search..." style={styles.searchInput} />
+            <TextInput
+              placeholder="Search..."
+              onChange={onSearch}
+              style={styles.searchInput}
+            />
           </View>
           <TouchableOpacity onPress={() => {}} style={styles.filterButton}>
             <Ionicons name="options" size={28} color={Colors.white} />
@@ -76,7 +98,7 @@ const HomePage = () => {
         </View>
         <CategoryButtons onCategoryChanged={onCategoryChanged} />
 
-        <Listings listings={listingData} />
+        <Listings listings={filteredListingData} />
       </View>
     </>
   );
