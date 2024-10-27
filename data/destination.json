@@ -2,7 +2,7 @@
     {
         "id": "1",
         "name": "Tropical Paradise Resort",
-        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "images": "https://images.unsplash.com/photo-1484821582734-6c6c9f99a672",
         "description": "Escape to the ultimate tropical paradise retreat with",
         "rating": 4.0,
         "price": "150",
@@ -24,7 +24,7 @@
     {
         "id": "3",
         "name": "Urban Explorer's Dream",
-        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "images": "https://images.unsplash.com/photo-1511995136697-90b35db2d3d5",
         "description": "Immerse yourself in the vibrant energy of the city with",
         "rating": 4.7,
         "price": "140",
@@ -35,7 +35,7 @@
     {
         "id": "4",
         "name": "Enchanted Forest Retreat",
-        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "images": "https://images.unsplash.com/photo-1669741407068-d4d0bcdf04f5",
         "description": "Find serenity in the heart of nature with towering ",
         "rating": 4.6,
         "price": "180",
@@ -46,7 +46,7 @@
     {
         "id": "5",
         "name": "Tranquil Lakeside Maven",
-        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "images": "https://images.unsplash.com/photo-1650499042754-da2b09dcc79d",
         "description": "Relax and rejuvenate by the tranquil lakeside, surrounded",
         "rating": 4.9,
         "price": "120",
@@ -57,7 +57,7 @@
     {
         "id": "6",
         "name": "Sandy Shores Beach Resort",
-        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "images": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8",
         "description": "Relax and rejuvenate by the tranquil lakeside",
         "rating": 4.9,
         "price": "120",
@@ -68,7 +68,7 @@
     {
         "id": "7",
         "name": "Mountains",
-        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "images": "https://images.unsplash.com/photo-1480497490787-505ec076689f",
         "description": "Relax and rejuvenate by the tranquil lakeside",
         "rating": 4.7,
         "price": "100",
@@ -79,7 +79,7 @@
     {
         "id": "8",
         "name": "Metropolitan Marvels",
-        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "images": "https://images.unsplash.com/photo-1505440484611-23c171ad6e96",
         "description": "Discover the cultural richness and architecture wonders",
         "rating": 4.6,
         "price": "170",
@@ -97,5 +97,49 @@
         "duration": "3",
         "location": "Japan",
         "category": "Forests"
+    },
+    {
+        "id": "10",
+        "name": "Peruvian Castle",
+        "images": "https://images.unsplash.com/photo-1707067904989-6ae5a08cd485",
+        "description": "Discover the cultural richness and architecture wonders",
+        "rating": 4.6,
+        "price": "170",
+        "duration": "3",
+        "location": "Peru",
+        "category": "Historical Sites"
+    },
+    {
+        "id": "11",
+        "name": "Boston Commons in the Spring",
+        "images": "https://images.unsplash.com/photo-1622050956578-94fd044a0ada",
+        "description": "Discover the cultural richness and architecture wonders",
+        "rating": 4.6,
+        "price": "170",
+        "duration": "3",
+        "location": "USA",
+        "category": "National Parks"
+    },
+    {
+        "id": "12",
+        "name": "Boston Commons in the Spring",
+        "images": "https://plus.unsplash.com/premium_photo-1666497934028-607274a840a8",
+        "description": "What you see here is one of the most visited location in Maldives. to see Mantarays",
+        "rating": 4.6,
+        "price": "170",
+        "duration": "3",
+        "location": "Maldives",
+        "category": "Islands"
+    },
+    {
+        "id": "13",
+        "name": "Las Vegas Desert",
+        "images": "https://plus.unsplash.com/premium_photo-1671611799147-68a4f9b3f0e1",
+        "description": "Visit Las vegas today!",
+        "rating": 4.6,
+        "price": "170",
+        "duration": "3",
+        "location": "USA",
+        "category": "Deserts"
     }
 ]

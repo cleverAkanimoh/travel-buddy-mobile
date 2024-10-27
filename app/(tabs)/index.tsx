@@ -1,6 +1,7 @@
 import {
   Image,
   NativeSyntheticEvent,
+  ScrollView,
   StyleSheet,
   Text,
   TextInput,
@@ -17,6 +18,7 @@ import CategoryButtons from "@/components/CategoryButtons";
 import Listings from "@/components/Listings";
 import listingData from "@/data/destination.json";
 import GroupListings from "@/components/GroupListings";
+import groupData from "@/data/groups.json";
 
 const HomePage = () => {
   const headerHeight = useHeaderHeight();
@@ -82,26 +84,31 @@ const HomePage = () => {
         }}
       />
       <View style={[styles.container, { paddingTop: headerHeight }]}>
-        <Text style={styles.headingText}>Explore The Beautiful World!</Text>
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={{ gap: 20, paddingBottom: 20 }}
+        >
+          <Text style={styles.headingText}>Explore The Beautiful World!</Text>
 
-        <View style={styles.searchSectionWrapper}>
-          <View style={styles.searchWrapper}>
-            <Ionicons name="search" size={18} />
-            <TextInput
-              placeholder="Search..."
-              onChange={onSearch}
-              style={styles.searchInput}
-            />
+          <View style={styles.searchSectionWrapper}>
+            <View style={styles.searchWrapper}>
+              <Ionicons name="search" size={18} />
+              <TextInput
+                placeholder="Search..."
+                onChange={onSearch}
+                style={styles.searchInput}
+              />
+            </View>
+            <TouchableOpacity onPress={() => {}} style={styles.filterButton}>
+              <Ionicons name="options" size={28} color={Colors.white} />
+            </TouchableOpacity>
           </View>
-          <TouchableOpacity onPress={() => {}} style={styles.filterButton}>
-            <Ionicons name="options" size={28} color={Colors.white} />
-          </TouchableOpacity>
-        </View>
-        <CategoryButtons onCategoryChanged={onCategoryChanged} />
+          <CategoryButtons onCategoryChanged={onCategoryChanged} />
 
-        <Listings listings={filteredListingData} category={category} />
+          <Listings listings={filteredListingData} category={category} />
 
-        <GroupListings />
+          <GroupListings listings={groupData} />
+        </ScrollView>
       </View>
     </>
   );
@@ -114,7 +121,6 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 20,
     backgroundColor: Colors.bgColor,
-    gap: 20,
   },
   headingText: {
     fontSize: 28,

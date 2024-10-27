@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "name": "Holiday Travel Agency",
+        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "rating": 4.7,
+        "reviews": 1450
+    },
+    {
+        "id": "2",
+        "name": "Happy Tour Planners",
+        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "rating": 4.8,
+        "reviews": 650
+    },
+    {
+        "id": "3",
+        "name": "Royal Tour & Travel",
+        "images": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be",
+        "rating": 4.9,
+        "reviews": 550
+    }
+]
